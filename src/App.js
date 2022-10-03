@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Container, CssBaseline, Paper } from "@mui/material";
+import React from "react";
+import MyStepper from "./MyStepper";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <Container component={Box} p={3} >
+        <Paper component={Box} p={3}>
+          <MyStepper />
+        </Paper>
+      </Container>
+    </>
   );
-}
+};
 
 export default App;
